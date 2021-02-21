@@ -1,0 +1,9 @@
+version: '2'
+services:
+  zapateria-bernini:
+    image: zapateria-bernini
+    container_name: zapateria-bernini
+    ports: 
+      - 8000:8000
+    volumes: 
+      - "/var/log/django:/var/log/django"
