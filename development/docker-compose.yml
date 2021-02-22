@@ -5,4 +5,11 @@ services:
     container_name: zapateria-bernini
     ports: 
       - 8000:8000
-      
+    environment:
+      - DJANGO_DEBUG=1
+      - EMAIL_HOST="smtp.gmail.com"
+      - EMAIL_HOST_USER="user@localhost"
+      - EMAIL_HOST_PASSWORD="password"
+      - EMAIL_PORT=587
+      - EMAIL_USE_TLS="true"
+      - DEFAULT_FROM_EMAIL="user@localhost"
