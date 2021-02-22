@@ -5,5 +5,4 @@ services:
     container_name: zapateria-bernini
     ports: 
       - 8000:8000
-    volumes: 
-      - "/var/log/django:/var/log/django"
+      
